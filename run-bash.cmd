@@ -1,5 +1,5 @@
 @echo off
-:: Windows Bash Starter
+:: Windows Bash Starter (version 1.0.0)
 :: https://github.com/skrysmanski/windows-bash-starter
 
 :: Bash script to execute
