@@ -15,3 +15,4 @@ between Windows and Linux/macOS - like `mytools.cmd` and `mytools.sh`.
 Currently supported bash "packages":
 
 * [Git for Windows](https://git-for-windows.github.io/) (easy to install)
+* Bash on `%PATH%`

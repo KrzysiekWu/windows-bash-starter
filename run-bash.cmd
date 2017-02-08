@@ -2,7 +2,19 @@
 :: Windows Bash Starter
 :: https://github.com/skrysmanski/windows-bash-starter
 
+:: Bash script to execute
 set TARGET_SCRIPT=run-bash.sh
+
+::
+:: Magic below.
+::
+
+:: Check if bash is available on the path.
+where /Q bash
+if %ERRORLEVEL% EQU 0 (
+    for /f %%i in ('where bash') do set BASH_PATH=%%i
+    goto RUN_BASH
+)
 
 :: If %GIT_INSTALL_ROOT% is not available, try to guess it.
 if "%GIT_INSTALL_ROOT%"=="" (
@@ -15,6 +27,8 @@ if not exist "%GIT_INSTALL_ROOT%\bin\bash.exe" (
 	echo   Afterwards, reopen this command window.
 	exit /B 1
 )
+
+:RUN_BASH
 
 :: Make working dir changes local to this script.
 setlocal
