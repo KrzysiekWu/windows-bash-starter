@@ -1,4 +1,6 @@
 @echo off
+:: Windows Bash Starter
+:: https://github.com/skrysmanski/windows-bash-starter
 
 set TARGET_SCRIPT=run-bash.sh
 
@@ -19,5 +21,6 @@ setlocal
 :: Cd to the script directory
 cd %~dp0
 
-:: Important: Don't use "-i" or "Ctrl+C" won't work to cancel SSH password prompts.
+:: Important: Don't use "-i" or "Ctrl+C" may not work (e.g. to 
+:: cancel SSH password prompts).
 "%GIT_INSTALL_ROOT%\bin\bash.exe" "%TARGET_SCRIPT%" %*
