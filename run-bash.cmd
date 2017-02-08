@@ -35,6 +35,6 @@ setlocal
 :: Cd to the script directory
 cd %~dp0
 
-:: Important: Don't use "-i" or "Ctrl+C" may not work (e.g. to 
+:: Important: Don't use "-i" or "Ctrl+C" may not work (e.g. to
 :: cancel SSH password prompts).
 "%GIT_INSTALL_ROOT%\bin\bash.exe" "%TARGET_SCRIPT%" %*

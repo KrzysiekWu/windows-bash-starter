@@ -6,7 +6,7 @@ to invoke a bash script in Windows (given bash is installed somehow).
 The file is: `run-bash.cmd`
 
 It is suppose to be a template to you *copy* into (and adapt to) your own project.
-It's suppose to work out of the box - without requiring the user to setup 
+It's suppose to work out of the box - without requiring the user to setup
 environment variables or the like.
 
 One of the main purposes for this is to be able to provide a "shared" script
