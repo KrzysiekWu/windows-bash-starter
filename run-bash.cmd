@@ -1,5 +1,5 @@
 @echo off
-:: Windows Bash Starter (version 1.0.0)
+:: Windows Bash Starter (version 1.0.1)
 :: https://github.com/skrysmanski/windows-bash-starter
 
 :: Bash script to execute
@@ -12,8 +12,8 @@ set TARGET_SCRIPT=run-bash.sh
 :: Check if bash is available on the path.
 where /Q bash
 if %ERRORLEVEL% EQU 0 (
-    for /f %%i in ('where bash') do set BASH_PATH=%%i
-    goto RUN_BASH
+	for /f %%i in ('where bash') do set BASH_PATH=%%i
+	goto RUN_BASH
 )
 
 :: If %GIT_INSTALL_ROOT% is not available, try to guess it.
